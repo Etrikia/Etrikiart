@@ -17,6 +17,9 @@
   .brownback {
     display: block;
   }
+.slider_section img {
+    object-fit: 0% 100%;
+  }
   }
 body {
   font-family: "Poppins", sans-serif;
