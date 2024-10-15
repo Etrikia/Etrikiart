@@ -1,10 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
 /* fonts import */
 @import url("../fonts/octin_sports_rg.ttf");
+@media screen and (max-width: 600px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+
+  }
+  table img {
+    object-fit: contain;
+    width: 90%;
+
+  }
+  form {
+    display: block;
+  }
+  .brownback {
+    display: block;
+  }
+  }
 body {
   font-family: "Poppins", sans-serif;
-  color: #0c0c0c;
-  background-color: black;
+  color: black;
+  background-color: #191716;
   overflow-x: hidden;
   margin: 0;
 }
@@ -24,14 +41,14 @@ h2 {
 
 a, a:visited
 {
-color: white;
-text-decoration: none;
+color: black;
+text-decoration: underline;
 }
 
 
 a:hover,a:focus {
   text-decoration: none;
-  color:#0c0c0c;
+  color:white;
 
 }
 /*end header section*/
@@ -71,15 +88,15 @@ a:hover,a:focus {
   display: inline-block;
   padding: 10px 45px;
   background-color: transparent;
-  color: #fd9c6b;
+  color: #B1DDF1;
   border-radius: 5px;
-  border: 1px solid #fd9c6b;
+  border: 1px solid #B1DDF1;
   -webkit-transition: all .2s;
   transition: all .2s;
 }
 
 .slider_section .detail-box .slider-link:hover {
-  background-color: #fd9c6b;
+  background-color: #B1DDF1;
   color: #ffffff;
 }
 /* end tos button */
@@ -103,7 +120,7 @@ a:hover,a:focus {
 }
 
 .info_section {
-  background-color: black;
+  background-color: #B1DDF1;
   color: #ffffff; 
 }
 .info_section h3 {
@@ -141,7 +158,7 @@ margin-bottom: 5px;
 }
 
 .info_section .info_links .info_links_menu a:hover {
-  color: #fd9c6b;
+  color: #B1DDF1;
 }
 
 .info_section .info_contact a {
@@ -156,43 +173,54 @@ margin-bottom: 5px;
 }
 
 .info_section .info_contact a:hover:hover {
-  color: #fd9c6b;
+  color: #B1DDF1;
 }
 
 .info_section h3{
-  color:#a4bf81;
+  color:#AED184;
 
 }
 
 form {
-	background-color:#a8856f;
+	background-color:#AED184;
 	color:black;
+	margin: 20px 20px;
 	padding:20px;
   font-size: 14pt;
-
 	}
 main { 
 padding: 15px;
 }
 nav {
 	text-align:center;
-	background-color:#E98E99;
+	background-color:#F19EA6;
 	height: 10%;
 	padding: 1em 0;
 	margin: 20px 0;
 	flex-wrap:wrap;
+  text-shadow: 2px 2px white;
 	}
+nav a {
+  text-decoration: none;
+  
+}
+nav a:hover{
+  color:#AED184;
+}
 .brownback{
-	background-color:#a8856f;
-	color: white;
+	background-color:#A8856F;
+	color: black;
 	margin: 20px 20px;
 	padding:20px;
 }
 .brownback a {
-	color:#E98E99;
+	color:black;
 }
 .brownback a:hover {
-	color:black;
+	color:#B1DDF1;
+}
+.brownback h1 {
+  color: white;
 }
 /* The grid: Four equal columns that floats next to each other */
 .column {
@@ -233,7 +261,7 @@ height: 200x;
   color: white;
   font-size: 50px;
   cursor: pointer;
-  background-color:#E98E99;
+  background-color:#F19EA6;
 }
 
 .scroll {
@@ -242,8 +270,10 @@ height: 200x;
 }
 
 .scroll img {
-  overflow: clip;
+  object-fit: cover;
+  display: flex;
   height: 250px;
+  object-position: 50% 25%;
 }
 
 .homepage {
@@ -251,13 +281,13 @@ height: 200x;
 }
 
 #textfield {
-  height:30px; width:300px;
+  height:30px; width:30%;
   font-size:14pt;
   overflow: scroll;
   text-align:middle;
 }
 #textfield2 {
-  height:50px; width:600px;
+  height:50px; width:50%;
   font-size:14pt;
   overflow: scroll;
   text-align: middle;
@@ -268,13 +298,14 @@ height: 200x;
 }
 
 table, th, td {
-  border: 4px solid #a8856f;
+  border: 4px solid #A8856F;
   border-collapse: collapse;
   border-radius: 20px;
   padding: 20px 30px;
+  
 }
 th, td {
-  background-color:#a4bf81;
+  background-color:white;
 }
 
 table img {
@@ -290,3 +321,19 @@ label {
   display:block;
   text-decoration: underline;
 }
+.player {
+  aspect-ratio: 16 / 9;
+  width: 80%;
+}
+
+.contacts {
+	background-color:#AED184;
+	color: black;
+	margin: 20px 20px;
+	padding:20px;
+}
+.contacts a {
+  text-decoration: underline;
+}
+.contacts h1 {
+  color:white;}
