@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <link rel="icon" href="images/favicon.png" type="image/gif" />
+  <meta name="keywords" content="art,commission,portfolio,vtuber" />
+  <meta name="description" content="art commissions and showcase" />
+  <meta name="author" content="Cassie" />
+
+  <title>Gallery</title>
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <header>
+    <span class="header_section">
+    <a  href="index.html"> <img src="etriklogo.png" alt="logo" width="301" height="84"> </a>
+    </span>
+        <nav>
+   <h1>
+    <a href="index.html">Home</a> |
+    <a href="art.html">Gallery</a> |
+    <a href="about.html">Terms of Service</a> |
+    <a href="forms.html">Forms</a>
+  </h1>
+        </nav>
+    </header>
+<main>
+<div class="contacts">
+<div style="text-align:center">
+  <h1>Gallery</h1>
+</div>
+
+<!-- columns -->
+<div class="scroll">
+  <div class="column">
+    <img src="img1.png" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img2.png"  style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img3.png" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img4.png" style="width:100%" onclick="myFunction(this);">
+	  </div>
+	<div class="column">
+    <img src="img5.png" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container2">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:40%">
+  <div id="imgtext"></div>
+</div>
+</div>
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+<div class="brownback">
+<p>I also like to sing in my spare time! Here's a cover I did for a contest. <small><i>I need a new mic</i></small></p>
+<iframe class="player" src="https://www.youtube-nocookie.com/embed/J8acOSoI4L8?si=vPLTKueWnyAS-xNB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+</main>
+<section class="info_section">
+  <div class="container">
+    <div class="row info_main_row">
+        <div class="info_links">
+          <h3>
+            Menu
+          </h3>
+          <div class="info_links_menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">Terms of Service</a>
+            <a href="art.html">Gallery</a>
+            <a href="forms.html">Commission Form</a>
+          </div>
+      </div>
+        <div class="info_contact">
+    <h3>
+          Contact Me
+        </h3>
+    <span>
+    <a href="https://www.twitch.tv/etrikia">Twitch</a>
+    <a href="https://www.pixiv.net/en/users/76314059">Pixiv</a>
+    <a href="https://twitter.com/Etrikia">Twitter</a>
+    <a href="https://discord.com/">Discord: Etrikia</a> 
+          </a>
+    </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>
